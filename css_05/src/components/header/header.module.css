@@ -1,0 +1,16 @@
+.header{
+   background: #ebcbcb;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    margin: 10px auto;
+}
+
+.header p{
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
