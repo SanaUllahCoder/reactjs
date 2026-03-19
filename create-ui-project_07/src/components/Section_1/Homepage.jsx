@@ -1,14 +1,16 @@
 
-import LeftContent from './LeftContent'
-import RightContent from './RightContent'
+import Homepage from './HeroSection'
 
-const Homepage = () => {
+export const HomePage = (props) => {
+  console.log(props.users);
+  
+
   return (
-    <div className='py-10 flex justify-between gap-10 h-[90vh]  px-18'>
-        <LeftContent />
-        <RightContent />
+    <div className='h-full w-full'>
+        <Homepage users={props.users} />
     </div>
   )
 }
 
-export default Homepage
+
+export default HomePage
