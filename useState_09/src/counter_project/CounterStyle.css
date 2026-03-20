@@ -1,0 +1,19 @@
+html body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.counter{
+    background: #d13939;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+}
+
+.counter button{
+    margin: 5px 30px;
+    padding: 20px 30px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
