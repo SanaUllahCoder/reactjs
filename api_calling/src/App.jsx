@@ -1,5 +1,7 @@
 import axios from "axios"
 import { useState } from "react"
+import './App.css'
+
 const App = () => {
   // FETCH METHOD
 
@@ -35,21 +37,26 @@ const App = () => {
 
 
   return (
-    <div>
-      <button onClick={getData}>Get Fetch Data or API Method  </button>
-      <button onClick={axiosData}>Get Axios Data or API Method  </button>
-      <button onClick={axiosDataExp}>Get Axios Data or API Method Example </button>
-      <div>
-        <button onClick={getAxiosUsestate}>Get Axios Data or API Method useState Example </button>
-        <div>
-          {apiAxios.map((user, idx) => {
-
-            return <h1>hellos{user.author} {idx}</h1>
-          })}
-        </div>
-
+    <div className="app-container">
+      <h1 className="title">API Calling Demo</h1>
+      <div className="button-group">
+        <button className="btn btn-fetch" onClick={getData}>Get Fetch Data</button>
+        <button className="btn btn-axios" onClick={axiosData}>Get Axios Data</button>
+        <button className="btn btn-example" onClick={axiosDataExp}>Axios Example</button>
+        <button className="btn btn-usestate" onClick={getAxiosUsestate}>Load Images with useState</button>
       </div>
-
+      <div className="data-display">
+        {apiAxios.length > 0 && (
+          <div className="image-grid">
+            {apiAxios.map((item, idx) => (
+              <div key={idx} className="image-card">
+                <img src={item.download_url} alt={item.author} className="image" />
+                <p className="author">Author: {item.author}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   )
 }

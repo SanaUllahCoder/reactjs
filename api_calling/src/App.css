@@ -1,0 +1,100 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-fetch {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-fetch:hover {
+  background-color: #0056b3;
+}
+
+.btn-axios {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-axios:hover {
+  background-color: #1e7e34;
+}
+
+.btn-example {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-example:hover {
+  background-color: #e0a800;
+}
+
+.btn-usestate {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-usestate:hover {
+  background-color: #c82333;
+}
+
+.data-display {
+  margin-top: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.author {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
